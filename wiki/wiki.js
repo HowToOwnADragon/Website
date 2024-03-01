@@ -1,7 +1,7 @@
 function redirectToGronckleMH() {
-    window.location.href = 'dragons/Gronckle/groncklecodecopiedfromMH.html';
+    window.location.href = 'Miraheze/groncklecodecopiedfromMH.html';
 }
 
 function redirectToGronckle() {
-    window.location.href = 'dragons/Gronckle/gronckle.html';
+    window.location.href = 'Wiki/Dragons/Gronckle/gronckle.html';
 }
