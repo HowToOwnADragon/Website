@@ -1,0 +1,48 @@
+.all-button {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.home-button-div,
+.download-button-div,
+.addon-button-div,
+.crowdin-button-div,
+.wiki-button-div,
+.donate-button-div,
+.support-button-div,
+.about-button-div {
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: black;
+}
+
+.home-button,
+.download-button,
+.addon-button,
+.crowdin-button,
+.wiki-button,
+.donate-button,
+.support-button,
+.about-button {
+display: inline-block;
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.copyright-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.owner,
+.rights,
+.copyright {
+    margin-bottom: 0;
+    text-align: center;
+}

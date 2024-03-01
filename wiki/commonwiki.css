@@ -1,0 +1,40 @@
+/* for shit like bg color. can be temporary, depending on what we want*/
+body {
+    background-color: rgb(26, 26, 26);
+    color: whitesmoke;
+}
+/*css for the infoboxes on the left of every page*/
+.infotable {
+    float: right;
+    padding: 5px;
+    margin-left: 3px;
+    border: 3px solid #003aff;
+    width: 25%;
+}
+
+table,th,tr,td {
+    border-collapse: collapse;
+    border-spacing: 2px;
+    border: 1px solid #a2a9b1;
+}
+col{
+    border-collapse: collapse;
+    border: 1px solid #a2a9b1;
+
+}
+th,td {
+    padding: 0.2em 0.4em;
+}
+
+.toc {
+    display:table;
+    padding: 7px;
+    border: 1px solid #a2a9b1;
+    position: relative;
+    word-wrap: break-word;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+.toctitle {
+    border-bottom: 1px solid #a2a9b1;
+}
