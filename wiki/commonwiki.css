@@ -1,4 +1,9 @@
 /* for shit like bg color. can be temporary, depending on what we want*/
+@font-face {
+    font-family: "Uchen", serif;
+    src: url(/assets/Uchen-Regular.ttf);
+}
+
 body {
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
