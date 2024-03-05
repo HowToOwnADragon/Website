@@ -1,19 +1,18 @@
 /* for shit like bg color. can be temporary, depending on what we want*/
 @font-face {
-    font-family: "Uchen-Regular", serif;
-    src: url('assets/Fonts/Uchen-Regular.ttf');
-    src: url('assets/Fonts/Uchen-Regular.eot');
-    src: url('assets/Fonts/Uchen-Regular.eot?#iefix') format('embedded-opentype'),
-        url('assets/Fonts/Uchen-Regular.woff2') format('woff2'),
-        url('assets/Fonts/Uchen-Regular.woff') format('woff'),
-        url('/assets/Fonts/Uchen-Regular.svg#Uchen-Regular') format('svg');
+    font-family: Uchen-Regular, serif;
+    src: url(../assets/Fonts/Uchen-Regular.ttf) format(truetype);
+    src: url(../assets/Fonts/Uchen-Regular.eot);
+    src: url(../assets/Fonts/Uchen-Regular.woff2) format(woff2),
+         url(../assets/Fonts/Uchen-Regular.woff) format(woff),
+         url(../assets/Fonts/Uchen-Regular.svg) format(svg);
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body,head {
-    font-family: "Uchen-Regular", serif;
+    font-family: Uchen-Regular, serif;
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
 }
