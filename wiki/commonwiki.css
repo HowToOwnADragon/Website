@@ -34,9 +34,13 @@ th,td {
     border: 1px solid #a2a9b1;
     position: relative;
     word-wrap: break-word;
-    line-height: 1.5;
+    line-height: 1.3;
     font-size: 1em;
 }
 .toctitle {
     border-bottom: 1px solid #a2a9b1;
+}
+.tocsublist {
+    padding-top: 0;
+    line-height: 1.1;
 }
