@@ -15,9 +15,9 @@ body,head {
 }
 /*css for the infoboxes on the left of every page*/
 .content {
-    margin-left: 20em;
-    margin-top: 5em;
-    margin-right: 10em;
+    margin-left: 17em;
+    margin-top: 7em;
+    margin-right: 7em;
 }
 .infotable {
     float: right;
