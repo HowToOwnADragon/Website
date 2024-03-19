@@ -8,11 +8,17 @@
          url(/assets/Fonts/Uchen-Regular.svg) format(svg); /* Legacy iOS */
 }
 body,head {
+    word-spacing: -6px;
     font-family: 'Uchen';
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
 }
 /*css for the infoboxes on the left of every page*/
+.content {
+    margin-left: 20em;
+    margin-top: 5em;
+    margin-right: 10em;
+}
 .infotable {
     float: right;
     padding: 5px;
