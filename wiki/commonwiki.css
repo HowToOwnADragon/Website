@@ -1,7 +1,14 @@
 /* for shit like bg color. can be temporary, depending on what we want*/
-
+@font-face {
+    font-family: Uchen;
+    src: url(/assets/Fonts/Uchen-Regular.eot); /* IE9 Compat Modes */
+    src: url(/assets/Fonts/Uchen-Regular.eot) format(embedded-opentype), /* IE6-IE8 */
+         url(/assets/Fonts/Uchen-Regular.woff) format(woff), /* Modern Browsers */
+         url(/assets/Fonts/Uchen-Regular.ttf)  format(truetype), /* Safari, Android, iOS */
+         url(/assets/Fonts/Uchen-Regular.svg) format(svg); /* Legacy iOS */
+}
 body,head {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Uchen';
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
 }
