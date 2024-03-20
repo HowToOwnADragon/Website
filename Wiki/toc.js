@@ -1,5 +1,5 @@
   // Create Table of Contents (ToC) based on heading tags (H2 to H6)
-function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = false) {
+function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = "Table of Contents:") {
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
   const toc = document.getElementById(tocElement);
@@ -25,8 +25,12 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
   if (tocTitle) {
       const title = document.createElement("H2");
       title.innerText = tocTitle;
-      title.classList.add("toc", "toc-title");
+      title.classList.add("toc-title");
       toc.appendChild(title);
+
+      title.addEventListener('click', ()=> {
+        list.classList.toggle("hidden");
+      });
   }
 
   const nav = document.createElement("NAV");
@@ -51,6 +55,7 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
       const link = document.createElement("A");
       link.textContent = heading.innerText;
       link.href = `#${heading.id}`;
+      link.classList.add('toc-link');
 
       contentsItem.appendChild(link);
       list.appendChild(contentsItem);
@@ -58,4 +63,5 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
 
   nav.appendChild(list);
   toc.appendChild(nav);
+
 }
