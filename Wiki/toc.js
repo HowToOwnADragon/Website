@@ -1,4 +1,4 @@
-const listContents = (tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = false)=> {
+const listContents = (tocElement, scopeElement = "body", levels = 3, tocTitle = false)=> {
     // Create Table of Contents (ToC) based on heading tags (H2 to H6)
     // TocElement - element ID to create ToC in (<DIV> only)
     // Levels - number of levels to include in ToC (1 to 5 starting with H2). Default=3 (H2-H4)
