@@ -23,7 +23,7 @@ const listContents = (tocElement, scopeElement = "body", levels = 3, tocTitle = 
     }
   
     // determine which heading tags to search by slicing list 'levels' deep
-    const tags = ["H2", "H3", "H4", "H5", "H6"].slice(0, levels);
+    const tags = ["h2", "h3", "h4", "h5", "h6"].slice(0, levels);
   
     // find the relevant heading tags contained within the scope element
     const headings = Array.from(scope.querySelectorAll(tags.join(", ")));
