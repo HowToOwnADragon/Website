@@ -1,4 +1,4 @@
-// Create Table of Contents (ToC) based on heading tags (H2 to H6)
+  // Create Table of Contents (ToC) based on heading tags (H2 to H6)
 function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = false) {
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
@@ -35,6 +35,10 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
   list.setAttribute("role", "list");
 
   headings.forEach((heading, index) => {
+      /* notoc class in headers excludes them from toc */
+    if (heading.classList.contains('notoc')) {
+      return;
+  }
       const level = Number(heading.nodeName[1]) - 1;
 
       if (!heading.id) {
@@ -47,13 +51,6 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
       const link = document.createElement("A");
       link.textContent = heading.innerText;
       link.href = `#${heading.id}`;
-
-      const permaLink = document.createElement("A");
-      permaLink.className = "toc-link";
-      permaLink.href = `#${heading.id}`;
-      permaLink.innerHTML = heading.innerHTML;
-      heading.innerHTML = "";
-      heading.appendChild(permaLink);
 
       contentsItem.appendChild(link);
       list.appendChild(contentsItem);
