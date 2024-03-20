@@ -1,3 +1,3 @@
 function RedirectToWiki() {
-    window.location.href = '/Wiki/main_page.html';
+    window.location.href = '/Wiki/wiki.html';
 }
