@@ -1,5 +1,5 @@
   // Create Table of Contents (ToC) based on heading tags (H2 to H6)
-function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = "Table of Contents:", hidebuttontxt = "[hide]") {
+function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = "Table of Contents:", hidebuttontxt = "[hide]", showbuttontxt = "[show]") {
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
   const toc = document.getElementById(tocElement);
@@ -35,8 +35,14 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
     hidebutton.innerText = hidebuttontxt;
     hidebutton.classList.add("toc-hidebutton")
     hidebutton.addEventListener('click', ()=> {
-        onclick(nav.classList.toggle("hidden"));
-    });
+        nav.classList.toggle("hidden");
+        if (nav.classList.contains("hidden")) {
+          hidebutton.innerText = showbuttontxt;
+        }
+        else {
+          hidebutton.innerText = hidebuttontxt;
+        }
+    })
 
     container.appendChild(title);
     container.appendChild(hidebutton);
