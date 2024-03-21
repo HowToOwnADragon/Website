@@ -42,7 +42,19 @@ th,td {
 }
 
 .hidden {
-    display: none;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.5s ease-out;
+}
+nav {
+    max-height: 330px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+}
+.toc-hidebutton {
+    padding-bottom: 0;
+    padding-top: 5px;
+    padding-left: 10px;
 }
 .toc-title {
     margin-top: 0;

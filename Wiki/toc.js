@@ -1,5 +1,5 @@
   // Create Table of Contents (ToC) based on heading tags (H2 to H6)
-function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = "Table of Contents:") {
+function createTableOfContents(tocElement = "toc", scopeElement = "body", levels = 3, tocTitle = "Table of Contents:", hidebuttontxt = "[hide]") {
   const slugify = (text) => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
 
   const toc = document.getElementById(tocElement);
@@ -23,19 +23,29 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
   }
 
   if (tocTitle) {
-      const title = document.createElement("H2");
-      title.innerText = tocTitle;
-      title.classList.add("toc-title");
-      toc.appendChild(title);
+    const container = document.createElement("DIV");
+    container.style.display = "flex";
+    container.style.alignItems = "center";
 
-      title.addEventListener('click', ()=> {
-        list.classList.toggle("hidden");
-      });
+    const title = document.createElement("H2");
+    title.innerText = tocTitle;
+    title.classList.add("toc-title");
+
+    const hidebutton = document.createElement("H6");
+    hidebutton.innerText = hidebuttontxt;
+    hidebutton.classList.add("toc-hidebutton")
+    hidebutton.addEventListener('click', ()=> {
+        onclick(nav.classList.toggle("hidden"));
+    });
+
+    container.appendChild(title);
+    container.appendChild(hidebutton);
+    toc.appendChild(container);
   }
 
   const nav = document.createElement("NAV");
   const list = document.createElement("UL");
-  list.classList.add("toc", "toc-list");
+  list.classList.add("toc", "toc-list", "hidden");
   list.setAttribute("role", "list");
 
   headings.forEach((heading, index) => {
@@ -50,7 +60,7 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
       }
 
       const contentsItem = document.createElement("LI");
-      contentsItem.classList.add(`toc`, `toc-item-l${level}`);
+      contentsItem.classList.add(`toc`, `toc-item-l${level}`, `hidden`);
 
       const link = document.createElement("A");
       link.textContent = heading.innerText;
