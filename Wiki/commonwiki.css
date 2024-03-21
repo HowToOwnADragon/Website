@@ -13,6 +13,11 @@ body,head {
     background-color: rgb(26, 26, 26);
     color: whitesmoke;
 }
+a {
+    text-decoration: underline;
+    color: whitesmoke;
+
+}
 /*css for the infoboxes on the left of every page*/
 .content {
     margin-left: 17em;
@@ -40,6 +45,7 @@ col{
 th,td {
     padding: 0.2em 0.4em;
 }
+
 /*------------------------------------------------*/
 /* TOC classes */
 .hidden {
