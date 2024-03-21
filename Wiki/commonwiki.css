@@ -40,7 +40,8 @@ col{
 th,td {
     padding: 0.2em 0.4em;
 }
-
+/*------------------------------------------------*/
+/* TOC classes */
 .hidden {
     max-height: 0;
     overflow:hidden;
@@ -89,4 +90,11 @@ nav {
     border:none;
     font-size: 12pt;
     border-bottom: 1px solid #a2a9b1;
+}
+
+/*----------------------------------------------------*/
+/* Other */
+.redirect {
+    text-decoration: underline;
+    font-weight: bold;
 }
