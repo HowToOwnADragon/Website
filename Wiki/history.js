@@ -5,33 +5,8 @@ function generateHistory(headers, data, divId = "History") {
     console.error('Div element not found');
     return;
   }
-
-  const table = document.createElement('table');
+  const table = document.createElement('TABLE');
   div.appendChild(table);
-
-  const container = document.createElement("DIV");
-  container.style.display = "flex";
-  container.style.alignItems = "center";
-
-  const title = document.createElement("H2");
-  title.innerText = "History";
-  title.classList.add("CollapsablElementTitle");
-
-  const hidebutton = document.createElement("H6");
-  hidebutton.innerText = "[hide]";
-  hidebutton.classList.add("history-hidebutton")
-  hidebutton.addEventListener('click', ()=> {
-      table.classList.toggle("hidden");
-      if (table.classList.contains("hidden")) {
-        hidebutton.innerText = "[show]";
-      }
-      else {
-        hidebutton.innerText = "[hide]";
-      }
-  })
-  container.appendChild(title);
-  container.appendChild(hidebutton);
-  div.insertBefore(container, table);
 
   // Generate headers
   let thead = table.createTHead();
@@ -51,4 +26,27 @@ function generateHistory(headers, data, divId = "History") {
       cell.innerText = cellData;
     }
   }
+
+  const container = document.createElement("DIV");
+  container.style.display = "flex";
+  container.style.alignItems = "center";
+
+  const title = document.createElement("H2");
+  title.innerText = "History";
+  title.classList.add("CollapsablElementTitle");
+
+  const hidebutton = document.createElement("H6");
+  hidebutton.innerText = "[hide]";
+  hidebutton.addEventListener('click', ()=> {
+      table.classList.toggle("hidden");
+      if (table.classList.contains("hidden")) {
+        hidebutton.innerText = "[show]";
+      }
+      else {
+        hidebutton.innerText = "[hide]";
+      }
+  })
+  container.appendChild(title);
+  container.appendChild(hidebutton);
+  div.insertBefore(container, table);
 }
