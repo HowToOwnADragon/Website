@@ -33,7 +33,7 @@ function createTableOfContents(tocElement = "toc", scopeElement = "body", levels
 
     const hidebutton = document.createElement("H6");
     hidebutton.innerText = hidebuttontxt;
-    hidebutton.classList.add("toc-hidebutton")
+    hidebutton.classList.add("hidebutton")
     hidebutton.addEventListener('click', ()=> {
         nav.classList.toggle("hidden");
         if (nav.classList.contains("hidden")) {

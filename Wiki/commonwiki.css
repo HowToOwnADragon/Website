@@ -59,7 +59,7 @@ nav {
     overflow: hidden;
     transition: max-height 0.5s ease-in;
 }
-.toc-hidebutton {
+.hidebutton {
     padding-bottom: 0;
     padding-top: 5px;
     padding-left: 10px;
@@ -103,12 +103,14 @@ nav {
 
 /* History Classes */
 .TableContainer {
-    height: 330px;
+    max-height: 330px;
+    display: block;
     overflow: hidden;
-    transition: height 0.5s ease-in;
+    transition: height 1s ease-in;
 }
 .tableHidden {
-    height: 0;
+    max-height: 0;
+    display: block;
     overflow:hidden;
     transition: height 1s ease-out;
 }

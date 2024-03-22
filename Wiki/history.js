@@ -16,6 +16,7 @@ function generateHistory(headers, data, divId = "History") {
 
   const hidebutton = document.createElement("H6");
   hidebutton.innerText = "[hide]";
+  hidebutton.classList.add("hidebutton")
   hidebutton.addEventListener('click', ()=> {
       TableContainer.classList.toggle("tableHidden");
       if (TableContainer.classList.contains("tableHidden")) {
