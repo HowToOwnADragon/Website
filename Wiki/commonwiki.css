@@ -47,6 +47,7 @@ th,td {
 }
 
 /*------------------------------------------------*/
+
 /* TOC classes */
 .hidden {
     max-height: 0;
@@ -99,6 +100,21 @@ nav {
 }
 
 /*----------------------------------------------------*/
+
+/* History Classes */
+.TableContainer {
+    height: 330px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+}
+.tableHidden {
+    height: 0;
+    overflow:hidden;
+    transition: height 1s ease-out;
+}
+
+/*------------------------------------------------*/
+
 /* Other */
 .redirect {
     text-decoration: underline;
