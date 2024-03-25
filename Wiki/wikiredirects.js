@@ -13,5 +13,5 @@ function RedirectToBoulderClass() {
 
 /*Redirects to Dragon pages*/
 function RedirectToGronckle() {
-    window.location.href = 'Dragons/Boulder/Gronckle/gronckle.html';
+    window.location.href = '/Wiki/Dragons/Boulder/Gronckle/gronckle.html';
 }
