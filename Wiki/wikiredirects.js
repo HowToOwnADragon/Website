@@ -33,3 +33,9 @@ function RedirectToDragons() {
 function RedirectToGronckle() {
     window.location.href = '/Wiki/Dragons/Boulder/Gronckle/gronckle.html';
 }
+function RedirectToNadder() {
+    window.location.href = '/Wiki/Dragons/Tracker/Deadly_Nadder/DeadlyNadder.html' 
+}
+function RedirectToTT() {
+    window.location.href = '/Wiki/Dragons/Stoker/Terrible_Terror/TerribleTerror.html'
+}
