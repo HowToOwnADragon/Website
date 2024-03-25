@@ -249,68 +249,32 @@
                     before it can fire again.
                 </p>
 
-            <div class="History"><h2><span class="headline" id="History">History</span></h2>
-                <div style="height:fit-content; width:fit-content;">
-                    <ul>
-                        <li>Alpha 0.0.1
-                            <ul>
-                                <li>Introduced</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <ul>
-                        <li>Alpha 0.0.2
-                            <ul>
-                                <li>The Gronckle is now Breedable</li>
-                                <li>The Gronckle has growing stages now</li>
-                                <li>The Gronckle has an Egg now</li>
-                                <li>Made Female and Male Gronckles seperate entities</li>
-                                <li>Sandstone is now also a Taming Item</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <ul>
-                        <li>Alpha 0.0.3
-                            <ul>
-                                <li>The Gronckle has GUI's now</li>
-                                <li>The Gronckle now has a fireball attack</li>
-                                <li>The Gronckle now has a saddle</li>
-                                <li>Made some slight changes to the Gronckle's AI</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <ul>
-                        <li>Alpha 0.0.4
-                            <ul>
-                                <li>Fixed some minor bugs regarding the Gronckle</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <ul>
-                        <li>Alpha 0.0.5
-                            <ul>
-                                <li>Completely reworked the Gronckle code</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <ul>
-                        <li>Alpha 0.0.6
-                            <ul>
-                                <li>Optimized Breeding</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <p class="empty"></p>
-                    <p class="empty"></p>
-                    <p class="empty"></p>
-                    <p class="empty"></p>
-                </div>
-            </div>
+                <div id="History">
+                    <script>
+                        const headers = ["Version:", "Changes:"];
+                        const data = [
+                            ["0.0.1","Introduced"],
+    
+                            ["0.0.2","The Gronckle is now Breedable"],
+                            ["","The Gronckle now has growing stages"],
+                            ["", "Female Gronckles now lays an egg after breeding"],
+                            ["", "Male and Female Gronckles are now seperate entities"],
+                            ["", "Added Sandstone to the list of breeding items"],
+    
+                            ["0.0.3", "Added a GUI to the Gronckle"],
+                            ["", "Added a fireball attack ability for the Gronckle"],
+                            ["", "Added Gronckle Saddle"],
+                            ["", "Tweaked the Gronckle's AI"],
+    
+                            ["0.0.4", "Fixed some bugs regarding the Gronckle"],
+    
+                            ["0.0.5", "Completely reworked the Gronckle's code"],
+    
+                            ["0.0.6", "Optimized the breeding"],
+                        ];
+    
+                        generateHistory(headers, data);
+                    </script>
         </div>
     </body>
 </html>
