@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title of the page (seen as text in the tab at the top of the screen in a browser)-->
         <title>DRAGON NAME - How to Own a Dragon Wiki</title>
-    <!-- External CSS file(s) & JS Scripts-->
+    <!-- External CSS file(s) & JS Scripts -->
         <link rel="stylesheet" href="/Wiki/commonwiki.css">
         <script src="/Wiki/toc.js"></script>
-        <script src="../../../lang-loader.js"></script>
+        <script src="/Wiki/history.js">
+        </script>
+        <script src="/lang-loader.js"></script>
         <script src="/Wiki/wikiredirects.js"></script>
     <!-- Title of the page (seen as text in the tab at the top of the screen in a browser)-->
     </head>
@@ -17,28 +19,28 @@
 
     <body style="background-color: rgb(26, 26, 26); color: whitesmoke;">
 
-        <div class="content">
+        <div id="content" class="content">
 
-            <div><h1>DRAGON NAME</h1></div>
+            <div><h1>Gronckle</h1></div>
             <p> <!-- Short Introduction to the dragon (1 paragraph, no more, no less.) -->
                 <i><b>The DRAGON NAME</b></i> is a <b>SIZE-sized 
                 <a class="redirect" onclick="RedirectToBoulderClass()">CLASS Class dragon</a></b> that appears
-                in the <a href="/wiki/Main_Page" title="Main Page">How to Own a Dragon</a> Minecraft Mod. 
+                in the <a class="redirect" onclick="RedirectToWikiMainPage()">How to Own a Dragon</a> Minecraft Mod. 
                 This page contains every single bit of information there is to know about the dragon in game. 
                 The subjects covered by this page are:
             </p>
 
-            <div class="toc">
+            <div class="toc" id="toc" style="border: 5px whitesmoke;"><!-- Table of Contents -->
             </div>
     
             <table class="infotable">
                 <tbody>
                     <tr>
-                        <th style="text-align: center"><h1 style="line-height: 40px;"><b>Gronckle</b></h1></th>
+                        <th style="text-align: center"><h1 style="line-height: 40px;"><b>DRAGON NAME</b></h1></th>
                     </tr>
 
                     <tr>
-                        <th style="text-align: center"><img alt="TEXT DISPLAYED WHEN HOVERING OVER THE IMAGE" src="INSERT SOURCE IMAGE" width="300" height="203"></th>
+                        <th style="text-align: center"><img style="padding-left: 10px;" alt="Brown Gronckle in pose" src="/assets/Dragons/Gronckle.png" width="300" height="203"></th>
                     </tr>
 
                     <tr>
@@ -46,16 +48,16 @@
                     </tr>
 
                     <tr>
-                        <td><b>Class: <a href="/wiki/Category:Boulder_Class" title="Category:Boulder Class">Boulder</a></b></td>
+                        <td><b>Class: <a class="redirect" onclick="RedirectToBoulderClass()">CLASS</a></b></td>
                     </tr>
 
                     <tr>
-                        <td><b>Variants:</b>
+                        <td><b>Colors:</b>
                             <ul> <!-- Every possible color of the dragon in the mod-->
-                                <li><b>Blue</b></li>
-                                <li><b>Orange</b></li>
-                                <li><b>Purple</b></li>
-                                <li><b>Brown (doesn't spawn naturally)</b></li>
+                                <li>Blue</li>
+                                <li>Orange</li>
+                                <li>Purple</li>
+                                <li>Brown (doesn't spawn naturally)</li>
                             </ul>
                         </td>
                     </tr>
@@ -63,31 +65,31 @@
                     <tr>
                         <td><b>Size:</b>
                             <ul> <!-- Size measured in BlockBench -->
-                                <li><b>Length: 3.7 Blocks</b></li>
-                                <li><b>Width: 2 Blocks</b></li>
-                                <li><b>Height: 2.2 Blocks</b></li>
-                                <li><b>Wingspan: 6.2 Blocks</b></li>
+                                <li>Length: 3.7 Blockss</li>
+                                <li>Width: 2 Blocks</li>
+                                <li>Height: 2.2 Blocks</li>
+                                <li>Wingspan: 6.2 Blocks</li>
                             </ul>
                         </td>
                     </tr>
 
                     <tr> <!-- Hitbox taken from MCreator entity file-->
-                        <td><b>Hitboxes: 2 x 2 x 2 Blocks</b></td>
+                        <td><b>Hitboxes:</b> 2 x 2 x 2 Blocks</td>
                     </tr>
 
                     <tr>
                         <td><b>Preferred Food:</b>
                             <ul>    <!-- Food to give for either Breeding or Growing-->
-                                <li><b>Stone</b></li>
-                                <li><b>Deepslate</b></li>
-                                <li><b>Cobblestone</b></li>
-                                <li><b>Cobbled Deepslate</b></li>
-                                <li><b>Sandstone</b></li>
-                                <li><b>Andesite</b></li>
-                                <li><b>Diorite</b></li>
-                                <li><b>Granite</b></li>
-                                <li><b>Cod</b></li>
-                                <li><b>Salmon</b></li>
+                                <li>Stone</li>
+                                <li>Deepslate</li>
+                                <li>Cobblestone</li>
+                                <li>Cobbled Deepslate</li>
+                                <li>Sandstone</li>
+                                <li>Andesite</li>
+                                <li>Diorite</li>
+                                <li>Granite</li>
+                                <li>Cod</li>
+                                <li>Salmon</li>
                             </ul>
                         </td>
                     </tr>
@@ -130,7 +132,7 @@
                 </tbody>
             </table>
 
-            <h2><span>Spawning</span></h2>
+            <h2>Spawning</h2>
                 <p>The DRAGON NAME is a fairly common dragon. It usually spawns in groups of 4 in the following biomes:</p>
                     <ul> <!-- List of all the possible biomes this dragon can spawn in -->
                         <li>Plains</li>
@@ -144,8 +146,8 @@
                         <li>Stony Shore</li>
                         <li>Grove</li>
                     </ul>
-                <h3><span>Variants</span></h3>
-                    <p>The DRAGON NAME can spawn in a variety of variants, including:</p>
+                <h3><span>Colors</span></h3>
+                    <p>The DRAGON NAME can spawn in a variety of different colors, including:</p>
                     <ul> <!-- List of every possible color of the dragon in the mod -->
                         <li>Blue</li>
                         <li>Orange</li>
@@ -203,11 +205,11 @@
                 </p>
             <h3><span>Breeding & Growing</span></h3>
                 <p>To breed a DRAGON NAME, use one of the following items on a male and female DRAGON NAME and they'll create an egg. 
-                    Put this egg into an Incubator, wait 30 seconds and then put INCUBATOR EXTRA ITEM in the bottom slot 
+                    Put this egg into an Incubator, wait 30 seconds and then put a lava bucket in the bottom slot 
                     (the egg does not have to be taken out of the incubator) and click the "Hatch" button.
                 </p>
                 <p>After a DRAGON NAME has laid an egg, the Female will have a cooldown of 30 seconds. 
-                    The male won't have a cooldown at all.
+                    Luckily the male won't have a cooldown at all.
                 </p>
                 <p>Breed items:</p>
                     <ul> <!-- List of all possible items to give this dragon in order for it to breed -->
@@ -249,33 +251,38 @@
                     before it can fire again.
                 </p>
 
-                <div id="History">
-                    <script>
-                        const headers = ["Version:", "Changes:"];
-                        const data = [
-                            ["0.0.1","Introduced"],
-    
-                            ["0.0.2","The Gronckle is now Breedable"],
-                            ["","The Gronckle now has growing stages"],
-                            ["", "Female Gronckles now lays an egg after breeding"],
-                            ["", "Male and Female Gronckles are now seperate entities"],
-                            ["", "Added Sandstone to the list of breeding items"],
-    
-                            ["0.0.3", "Added a GUI to the Gronckle"],
-                            ["", "Added a fireball attack ability for the Gronckle"],
-                            ["", "Added Gronckle Saddle"],
-                            ["", "Tweaked the Gronckle's AI"],
-    
-                            ["0.0.4", "Fixed some bugs regarding the Gronckle"],
-    
-                            ["0.0.5", "Completely reworked the Gronckle's code"],
-    
-                            ["0.0.6", "Optimized the breeding"],
-                        ];
-    
-                        generateHistory(headers, data);
-                    </script>
+            <div id="History">
+                <script>
+                    const headers = ["Version:", "Changes:"];
+                    const data = [
+                        ["0.0.1","Introduced"],
+
+                        ["0.0.2","The Gronckle is now Breedable"],
+                        ["","The Gronckle now has growing stages"],
+                        ["", "Female Gronckles now lays an egg after breeding"],
+                        ["", "Male and Female Gronckles are now seperate entities"],
+                        ["", "Added Sandstone to the list of breeding items"],
+
+                        ["0.0.3", "Added a GUI to the Gronckle"],
+                        ["", "Added a fireball attack ability for the Gronckle"],
+                        ["", "Added Gronckle Saddle"],
+                        ["", "Tweaked the Gronckle's AI"],
+
+                        ["0.0.4", "Fixed some bugs regarding the Gronckle"],
+
+                        ["0.0.5", "Completely reworked the Gronckle's code"],
+
+                        ["0.0.6", "Optimized the breeding"],
+                    ];
+
+                    generateHistory(headers, data);
+                </script>
+            </div>
         </div>
+
+            <script>
+                createTableOfContents();
+            </script>
     </body>
 </html>
     
