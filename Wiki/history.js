@@ -47,12 +47,17 @@ function generateHistory(headers, data, divId = "History") {
 
   // Generate rows
   let tbody = table.createTBody();
+  let previousCells = [];
   for (let rowData of data) {
     let row = tbody.insertRow();
-    for (let cellData of rowData) {
-      let cell = row.insertCell();
-      cell.innerText = cellData;
+    for (let i = 0; i < rowData.length; i++) {
+      if (rowData[i] !== "") {
+        let cell = row.insertCell();
+        cell.innerText = rowData[i];
+        previousCells[i] = cell;
+      } else if (previousCells[i]) {
+        previousCells[i].rowSpan = (previousCells[i].rowSpan || 1) + 1;
+      }
     }
   }
-
 }
