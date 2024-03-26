@@ -18,12 +18,9 @@ a {
     color: whitesmoke;
 
 }
+/*------------------------------------------------*/
+
 /*css for the infoboxes on the left of every page*/
-.content {
-    margin-left: 17em;
-    margin-top: 7em;
-    margin-right: 7em;
-}
 .infotable {
     float: right;
     padding: 5px;
@@ -55,7 +52,7 @@ th,td {
     transition: max-height 0.5s ease-out;
 }
 nav {
-    max-height: 330px;
+    max-height: 500px;
     overflow: hidden;
     transition: max-height 0.5s ease-in;
 }
@@ -121,4 +118,10 @@ nav {
 .redirect {
     text-decoration: underline;
     font-weight: bold;
+}
+.content {
+    margin-left: 17em;
+    margin-top: 7em;
+    margin-right: 7em;
+    margin-bottom: 7em;
 }

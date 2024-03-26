@@ -1,7 +1,41 @@
-.groncklemh {
-    background-color: blue;
+.content-heading {
+    height: 50px;
+    background-color: #1F1F1F;
+    border: 1px solid #333;
+    border-image: url(/skins/HypixelNeue/resources/skins.hypixelneue.styles.images/borders/classic_border.png?576e9) 1000 1000 stretch !important;
+    border-image-width: 35px;
+    border-image-outset: 2px;
+    margin: 0 0 1em;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.gronckle {
-    background-color: pink;
+.blocks-list {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.blocks-item {
+    box-sizing: border-box;
+    color: #ffc376;
+    display: flex;
+    flex: 1 0 180px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #ECEBEB;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(175,175,175,0.2);
+    flex-flow: wrap;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
