@@ -14,9 +14,10 @@ body,head {
     color: whitesmoke;
 }
 a {
-    text-decoration: underline;
     color: whitesmoke;
-
+}
+a:hover {
+    text-decoration: underline;
 }
 /*------------------------------------------------*/
 
